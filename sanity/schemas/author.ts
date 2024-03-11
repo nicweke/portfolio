@@ -1,0 +1,41 @@
+import { Rule } from '@sanity/validation';
+
+
+export default {
+    name: "author",
+    title: "Author",
+    type: "document",
+    fields: [
+        {
+            name: "name",
+            title: "Name",
+            type: "string",
+        },
+
+        {
+            name: "image",
+            title: "Image",
+            type: "image",
+            options: { hotspot: true },
+            fields: [
+                {
+                    name: "alt",
+                    title: "Alt",
+                    type: "string",
+                }
+            ]
+        },
+
+    ]
+
+}
+
+
+
+// image: string
+// technologies: Technology[]
+// name: string
+// slug: string
+// github: string
+// url: string
+// content: Content[]
