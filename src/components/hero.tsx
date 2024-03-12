@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { GitHub, LinkedIn } from "@/components/icons";
+import { HomeScene } from "@/scenes/home-scene";
 
 const Hero = () => {
   return (
@@ -51,6 +52,9 @@ const Hero = () => {
             Download Resume
           </Link>
         </div>
+      </div>
+      <div className=" hidden h-[500px] items-center justify-center lg:flex">
+        <HomeScene />
       </div>
     </div>
   );
